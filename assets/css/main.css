@@ -1824,6 +1824,9 @@ body {
 	.outer-nav>li {
 		font-size: 34px
 	}
+	.outer-nav>li::before {
+	height: 10px;
+	}
 }
 
 .outer-nav li.is-vis:nth-child(2) {
