@@ -1067,7 +1067,7 @@ body {
 	text-align: center;
 }
 
-@media (max-height: 700px) {
+@media (max-height: 750px) {
 	.fixed-slider {
 		display: none
 	}
