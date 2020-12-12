@@ -871,7 +871,7 @@ body {
 		height: 360px
 	}
 	.intro--banner h1 {
-		font-size: 55px
+		font-size: 45px
 	}
 	.intro--banner img {
 		display: none
@@ -1014,7 +1014,7 @@ body {
 }
 
 .work--lockup .slider--item-center .slider--item-description {
-	display: inline;
+	display: table-row;
 }
 
 .work--lockup .slider--item-center .slider--item-image {
@@ -1057,6 +1057,20 @@ body {
 
 .work--lockup .slider--prev {
 	left: 0
+}
+
+.fixed-slider {
+	top: 12%;
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	text-align: center;
+}
+
+@media (max-height: 700px) {
+	.fixed-slider {
+		display: none
+	}
 }
 
 @media (max-width: 900px) {
@@ -1189,7 +1203,7 @@ body {
 }
 
 .about--banner a {
-	padding: 5px 17px 5px 0;
+	padding: 5px 5px 5px 0;
 	text-decoration: none;
 	color: #fff;
 	font-weight: 700;
@@ -1214,6 +1228,10 @@ body {
 	position: absolute;
 	bottom: -90px;
 	right: -12px
+}
+.about--banner p {
+	width: 40%;
+	text-align: justify;
 }
 
 .about--options {
@@ -1296,6 +1314,9 @@ body {
 	.about--banner img {
 		width: 315px
 	}
+	.about--banner p {
+		width: 60%;
+	}	
 }
 
 @media (max-width: 600px) {
@@ -1310,7 +1331,7 @@ body {
 	}
 	.about--banner h2 {
 		margin-top: 0;
-		font-size: 55px;
+		font-size: 45px;
 	}
 	.modules-margin h2 {
 		margin-left: 13%
@@ -1325,6 +1346,9 @@ body {
 	}
 	.about--banner img {
 		display: none
+	}
+	.about--banner p {
+		width: 100%;
 	}
 	.about--options {
 		display: none
@@ -1849,7 +1873,6 @@ body {
 	transition-delay: .16s
 }
 
-
 .buttonset {
   justify-content: center;
   text-align: center;
@@ -1877,7 +1900,7 @@ body {
 .containeret {
   display: flex;
   flex-direction: column;
-  text-align: end;
+  text-align: center;
   width: 100%;
 }
 
@@ -1890,7 +1913,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 45px;
-  max-width: 160px;
+  max-width: 230px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -1949,4 +1972,8 @@ body {
   left: 120%;
   -webkit-transform: rotate(40deg);
           transform: rotate(40deg);
+}
+
+.button-extra-size {
+	font-size: 20px
 }
